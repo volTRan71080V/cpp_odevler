@@ -9,12 +9,14 @@ void printChar(char c){
 
 void printAlphabet(void){
     char alp[] = {'a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','r','s','t','u','v','y','z'};
-    //for kullanilmayacak
-    for (short i = 0; i < 23; i++)
+
+    short int i = 0;
+
+    while (i<23)
     {
         write(1,&alp[i],1);
+        i++;
     }
-
 }
 
 void printExam(int note){
