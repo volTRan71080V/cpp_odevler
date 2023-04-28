@@ -10,21 +10,21 @@ void	print_alphabet(void)
 	char	c;
 
 	c = 'a';
-	while (c < 'z')
-		ft_putchar(c++);
+	while (c <= 'z')
+	{
+		ft_putchar(c);
+		c++;
+	}
 }
 
-void	print_exam(int n)
+void	print_exam(int note)
 {
-	if (n <= 100 && n >= 0)
-		ft_putchar('A' + (10 - n / 10));
+	if (note <= 100 && note >= 0)
+		ft_putchar('A' + (10 - note / 10));
 }
 
 int	main(void)
 {
-	ft_putchar('A');
-	ft_putchar('\n');
-	print_alphabet();
-	ft_putchar('\n');
-	print_exam(10);
+	print_exam(101);
+	write(1, "hello", 5);
 }
