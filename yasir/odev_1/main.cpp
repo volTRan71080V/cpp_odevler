@@ -35,23 +35,16 @@ char a='A';
 	}
 }
 void ft_putchar(char a){
-
-write(1,&a,1);
+	write(1,&a,1);
 }
 
 int main()
 {
 
-ft_putchar('g');
-alfabe();
-puanHesapla(77);
+	ft_putchar('g');
+	alfabe();
+	puanHesapla(77);
 
-    
+
     return 0;
 }
-
-	
-
-
-
-
